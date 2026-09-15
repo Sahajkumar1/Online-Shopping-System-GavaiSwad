@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"/>
+	  <link th:href="@{/css/style.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/productj.css}" />
+  </head>
+  <body>
+	<div th:replace="~{fragments/header2 :: header2}"></div>
+    <section class="product-details">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Left Side -->
+
+            <div class="col-lg-6">
+
+                <div class="product-image">
+
+                    <img src="images/img3.jpg" alt="">
+
+                </div>
+
+             
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="col-lg-6">
+
+                <div class="product-info">
+
+                    <h1>Natural Jaggery</h1>
+
+                    <div class="rating">
+
+                        ⭐⭐⭐⭐⭐
+
+                        <span>(125 Reviews)</span>
+
+                    </div>
+
+                    <h2>₹120 / Kg</h2>
+
+                    <p>
+
+                        Our jaggery is prepared using fresh sugarcane juice
+                        without any chemicals.
+
+                        Rich in minerals and traditional taste.
+
+                    </p>
+
+                    <ul>
+
+                        <li>✔ 100% Natural</li>
+
+                        <li>✔ Chemical Free</li>
+
+                        <li>✔ Rich in Iron</li>
+
+                        <li>✔ Traditional Process</li>
+
+                    </ul>
+
+                    <div class="product-buttons">
+
+                        <a href="#" class="whatsapp-btn">
+
+                            WhatsApp Order
+
+                        </a>
+
+                        <a href="#" class="cart-btn">
+
+                            Add To Cart
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="product-extra">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Available Sizes -->
+
+            <div class="col-lg-6">
+
+                <h2 class="section-title">
+                    Available Sizes
+                </h2>
+
+                <div class="size-cards">
+
+                    <div class="size-card active">
+
+                        <img th:src="@{/images/icons/bag.png}" alt="">
+
+                        <h4>500g</h4>
+
+                        <h3>₹60</h3>
+
+                        <a href="#" class="size-btn">
+                            Add To Cart
+                        </a>
+
+                    </div>
+
+                    <div class="size-card">
+
+                        <span class="popular">
+                            Most Popular
+                        </span>
+
+                        <img th:src="@{/images/icons/bag.png}" alt="">
+
+                        <h4>1 Kg</h4>
+
+                        <h3>₹120</h3>
+
+                        <a href="#" class="size-btn">
+                            Add To Cart
+                        </a>
+
+                    </div>
+
+                    <div class="size-card">
+
+                        <img th:src="@{/images/icons/bag.png}" alt="">
+
+                        <h4>2 Kg</h4>
+
+                        <h3>₹230</h3>
+
+                        <a href="#" class="size-btn">
+                            Add To Cart
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Benefits -->
+
+            <div class="col-lg-6">
+
+                <h2 class="section-title">
+                    Benefits of Jaggery
+                </h2>
+
+                <div class="benefits">
+
+                    <div class="benefit-list">
+
+                        <ul>
+
+                            <li>✔ Natural Energy Booster</li>
+
+                            <li>✔ Helps Improve Digestion</li>
+
+                            <li>✔ Rich Source of Iron</li>
+
+                            <li>✔ Purifies Blood</li>
+
+                            <li>✔ Boosts Immunity</li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="benefit-image">
+
+                        <img src="images/gal9.jpeg" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="related-products">
+
+<div class="container">
+
+<h2 class="section-heading">
+
+Related Products
+
+</h2>
+
+<div class="row">
+
+<div class="col-lg-4">
+
+<div class="related-card">
+
+<img src="images/img2.jpg">
+
+<h3>Natural Vinegar</h3>
+
+<a href="#">View Product</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="related-card">
+
+<img src="images/img7.jpg">
+
+<h3>Homemade Pickle</h3>
+
+<a href="#">View Product</a>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="related-card">
+
+<img src="images/img5.jpg">
+
+<h3>Jaggery Powder</h3>
+
+<a href="#">View Product</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<div th:replace="~{fragments/footer :: footer}"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

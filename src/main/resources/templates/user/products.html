@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Page</title>
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+	<div th:replace="~{fragments/header :: header}"></div>
+	<!-- Contact Hero Section -->
+		<section class="contact-hero">
+		    <div class="overlay"></div>
+		    <div class="hero-content">
+		        <h1>Our Product</h1>
+		       <div class="breadcrumb">
+		            <a th:href="@{/}">Home</a>
+		            <span>></span>
+		            <span>Product</span>
+		        </div>
+		    </div>	
+		</section>
+		
+		<section class="products-section">
+			    <div class="container">
+			        <div class="section-title">
+			            <span>OUR PRODUCTS</span>
+			            <h2>Fresh From Our Village</h2>
+			            <p>
+			                Explore our naturally prepared products made with
+			                traditional recipes and pure ingredients.
+			            </p>
+			        </div>
+			        <div class="row g-4">
+			            <!-- Jaggery -->
+			            <div class="col-lg-4 col-md-6">
+			                <div class="product-card">
+			                    <img th:src="@{/images/gal4.jpg}" alt="Jaggery">
+			                    <div class="product-content">
+			                        <h3>Natural Jaggery</h3>
+			                        <p>
+			                            Pure sugarcane jaggery prepared without
+			                            chemicals or preservatives.
+			                        </p>
+			                        <a th:href="@{/products}" class="product-btn">
+			                            View Details
+			                        </a>
+			                   </div>
+			               </div>
+			            </div>
+			            <!-- Vinegar -->
+			            <div class="col-lg-4 col-md-6">
+			                <div class="product-card">
+			                    <img th:src="@{/images/product/img4.jpg}" alt="Vinegar">
+			                    <div class="product-content">
+			                        <h3>Natural Vinegar</h3>
+			                        <p>
+			                            Naturally fermented vinegar with authentic
+			                            homemade taste.
+			                        </p>
+			                        <a th:href="@{/products}" class="product-btn">
+			                            View Details
+			                        </a>
+			                   </div>
+			                </div>
+			            </div>
+			            <!-- Pickle -->
+			            <div class="col-lg-4 col-md-6">
+			                <div class="product-card">
+			                    <img th:src="@{/images/section/img7.jpg}" alt="Pickles">
+			                    <div class="product-content">
+			                        <h3>Homemade Pickles</h3>
+			                        <p>
+			                            Traditional village pickles made using
+			                            fresh spices and love.
+			                        </p>
+			                        <a th:href="@{/products}" class="product-btn">
+			                            View Details
+			                        </a>
+			                    </div>
+			               </div>
+			           </div>
+			        </div>
+			    </div>
+			</section>
+			
+  
+	<div th:replace="~{fragments/footer :: footer}"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

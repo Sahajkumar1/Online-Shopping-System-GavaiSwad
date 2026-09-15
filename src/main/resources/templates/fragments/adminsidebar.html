@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<div th:fragment="adminsidebar" class="sidebar">
+
+    <h3 class="text-center text-warning py-3">
+        Ganwai Swad
+    </h3>
+
+    <hr>
+
+    <a th:href="@{/admin/dashboard}">
+        <i class="bi bi-speedometer2"></i>
+        Dashboard
+    </a>
+
+    <a th:href="@{/admin/product/add}">
+        <i class="bi bi-box-seam"></i>
+        Product
+    </a>
+
+    <a th:href="@{/admin/category/add}">
+        <i class="bi bi-folder2-open"></i>
+        Category
+    </a>
+
+    <a th:href="@{/admin/brand/add}">
+        <i class="bi bi-tags"></i>
+        Brand
+    </a>
+
+    <a th:href="@{/logout}">
+        <i class="bi bi-box-arrow-right"></i>
+        Logout
+    </a>
+
+</div>
+
+</body>
+</html>

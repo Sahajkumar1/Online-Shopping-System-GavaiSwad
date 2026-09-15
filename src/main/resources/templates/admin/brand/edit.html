@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/adminheader :: adminheader('Edit Brand')"></head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div th:replace="fragments/adminsidebar :: adminsidebar"></div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Navbar -->
+        <div th:replace="fragments/adminnavbar :: adminnavbar"></div>
+
+        <div class="container-fluid mt-4">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-6">
+
+                    <div class="card shadow">
+
+                        <div class="card-header bg-warning text-center">
+
+                            <h3 class="mb-0">
+
+                                <i class="bi bi-pencil-square"></i>
+
+                                Edit Brand
+
+                            </h3>
+
+                        </div>
+
+                        <div class="card-body p-4">
+
+                            <form th:object="${brand}"
+                                  method="POST"
+                                  th:action="@{/admin/brand/update}">
+
+                                <!-- Hidden Brand ID -->
+                                <input type="hidden" th:field="*{brand_id}"/>
+
+                                <div class="mb-4">
+
+                                    <label class="form-label fw-bold">
+                                        Brand Name
+                                    </label>
+
+                                    <input type="text"
+                                           class="form-control form-control-lg"
+                                           th:field="*{brand_name}"
+                                           placeholder="Enter Brand Name"/>
+
+                                </div>
+
+                                <div class="d-grid">
+
+                                    <button type="submit"
+                                            class="btn btn-warning btn-lg">
+
+                                        <i class="bi bi-arrow-repeat"></i>
+
+                                        Update Brand
+
+                                    </button>
+
+                                </div>
+
+                            </form>
+
+                            <hr>
+
+                            <div class="text-center">
+
+                                <a th:href="@{/admin/brand/show}"
+                                   class="btn btn-secondary">
+
+                                    <i class="bi bi-arrow-left-circle"></i>
+
+                                    Back to Brand List
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div th:replace="fragments/adminfooter :: adminfooter"></div>
+
+    </div>
+
+</body>
+
+</html>

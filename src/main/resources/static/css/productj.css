@@ -1,0 +1,456 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: #FFF8E7;
+}
+
+
+
+.product-details{
+
+    padding:80px 0;
+
+    background:#FFF8E7;
+
+}
+
+.product-image{
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.product-image img{
+
+    width:100%;
+
+    height:500px;
+
+    object-fit:cover;
+
+}
+
+.thumbnail-gallery{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.thumbnail-gallery img{
+
+    width:95px;
+
+    height:95px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    border:2px solid transparent;
+
+}
+
+.thumbnail-gallery img:hover{
+
+    border-color:#2E7D32;
+
+}
+
+.product-info h1{
+
+    font-size:48px;
+
+    color:#5C3A21;
+
+    margin-bottom:20px;
+
+}
+
+.rating{
+
+    font-size:20px;
+
+    color:#ffb400;
+
+}
+
+.rating span{
+
+    color:#555;
+
+    font-size:16px;
+
+}
+
+.product-info h2{
+
+    color:#2E7D32;
+
+    margin:20px 0;
+
+    font-size:42px;
+
+}
+
+.product-info p{
+
+    line-height:32px;
+
+    color:#555;
+
+    margin-bottom:25px;
+
+}
+
+.product-info ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.product-info ul li{
+
+    margin:12px 0;
+
+    font-size:18px;
+
+}
+
+.product-buttons{
+
+    margin-top:35px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.whatsapp-btn{
+
+    background:#2E7D32;
+
+    color:#fff;
+
+    padding:15px 30px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+}
+
+.cart-btn{
+
+    background:#fff;
+
+    color:#2E7D32;
+
+    border:2px solid #2E7D32;
+
+    padding:15px 30px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+}
+
+.whatsapp-btn:hover{
+
+    background:#1d5d22;
+
+}
+
+.cart-btn:hover{
+
+    background:#2E7D32;
+
+    color:#fff;
+
+}
+
+.product-extra{
+
+    padding:80px 0;
+
+    background:#fff;
+
+}
+
+.section-title{
+
+    font-size:38px;
+
+    color:#5C3A21;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    width:70px;
+
+    height:3px;
+
+    background:#2E7D32;
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-10px;
+
+}
+
+/* Sizes */
+
+.size-cards{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.size-card{
+
+    flex:1;
+
+    border:2px solid #ddd;
+
+    border-radius:12px;
+
+    padding:20px;
+
+    text-align:center;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.size-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#2E7D32;
+
+}
+
+.size-card.active{
+
+    border-color:#2E7D32;
+
+}
+
+.popular{
+
+    position:absolute;
+
+    top:-10px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#2E7D32;
+
+    color:#fff;
+
+    padding:5px 15px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+}
+
+.size-card img{
+
+    width:60px;
+
+    margin-bottom:15px;
+
+}
+
+.size-card h4{
+
+    margin-bottom:10px;
+
+}
+
+.size-card h3{
+
+    color:#2E7D32;
+
+    margin-bottom:20px;
+
+}
+
+.size-btn{
+
+    display:block;
+
+    background:#2E7D32;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:10px;
+
+    border-radius:8px;
+
+}
+
+/* Benefits */
+
+.benefits{
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:center;
+
+}
+
+.benefit-list{
+
+    flex:1;
+
+}
+
+.benefit-list ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.benefit-list li{
+
+    margin-bottom:18px;
+
+    font-size:18px;
+
+}
+
+.benefit-image{
+
+    flex:1;
+
+}
+
+.benefit-image img{
+
+    width:100%;
+
+    border-radius:15px;
+
+}
+
+.related-products{
+
+padding:80px 0;
+
+background:#fff;
+
+}
+
+.section-heading{
+
+text-align:center;
+
+font-size:42px;
+
+color:#5C3A21;
+
+margin-bottom:50px;
+
+}
+
+.related-card{
+
+background:#FFF8E7;
+
+border-radius:15px;
+
+overflow:hidden;
+
+transition:.3s;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.related-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.related-card img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+}
+
+.related-card h3{
+
+padding:20px;
+
+text-align:center;
+
+}
+
+.related-card a{
+
+display:block;
+
+margin:20px;
+
+text-align:center;
+
+background:#2E7D32;
+
+color:#fff;
+
+padding:12px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+}

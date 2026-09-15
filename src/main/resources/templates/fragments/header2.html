@@ -1,0 +1,65 @@
+
+<html>
+  
+    
+  <body>
+    <!-- Navbar -->
+    <header th:fragment="header2">
+      <!-- Top Announcement Bar -->
+      <div class="top-bar">
+        <div class="top-left">
+          <i class="fa-solid fa-leaf"></i>
+          <span>Pure Village Taste, with Love ❤️</span>
+        </div>
+
+        <div class="top-right">
+          <i class="fa-solid fa-truck-fast"></i>
+          <span></span>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">🌿 <span>Ganwai</span> Swad</a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a th:href="@{/}" class="active">Home</a></li>
+          <li><a th:href="@{/products}">Products</a></li>
+          <li><a th:href="@{/about}">About</a></li>
+          <li><a  th:href="@{/contact}">Contact</a></li>
+        </ul>
+      <div class="nav-right">
+
+    <a href="#" class="order-btn">
+        <i class="fa-solid fa-cart-shopping"></i>
+        My Cart
+    </a>
+
+    <div class="dropdown">
+
+        <button class="btn order-btn dropdown-toggle"
+                type="button">
+
+            <i class="fa-solid fa-user"></i>
+            My Account
+
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end">
+
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Orders</a></li>
+            <li><a class="dropdown-item" href="#">Change Password</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+
+        </ul>
+
+    </div>
+
+</div>
+      </nav>
+    </header>
+   
+  </body>
+</html>

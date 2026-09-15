@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="fragments/adminheader :: adminheader('Dashboard')"></head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div th:replace="fragments/adminsidebar :: adminsidebar"></div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Navbar -->
+        <div th:replace="fragments/adminnavbar :: adminnavbar"></div>
+
+        <div class="container-fluid p-4">
+
+            <h2 class="mb-4">Dashboard</h2>
+
+            <!-- Dashboard Cards -->
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card dashboard-card card-product">
+                        <div class="card-body text-center">
+                            <i class="bi bi-box-seam display-4"></i>
+                            <h5 class="mt-3">Products</h5>
+							<h2 th:text="${totalProducts}"></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card dashboard-card card-category">
+                        <div class="card-body text-center">
+                            <i class="bi bi-folder2-open display-4"></i>
+                            <h5 class="mt-3">Categories</h5>
+							<h2 th:text="${totalCategories}"></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card dashboard-card card-brand">
+                        <div class="card-body text-center">
+                            <i class="bi bi-tags display-4"></i>
+                            <h5 class="mt-3">Brands</h5>
+							<h2 th:text="${totalBrands}"></h2>
+                        </div>
+                    </div>
+                </div>
+				
+				
+
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="row mt-5">
+
+                <div class="col-md-12">
+
+                    <div class="card">
+
+                        <div class="card-header bg-warning">
+                            <h5 class="mb-0">Quick Actions</h5>
+                        </div>
+
+                        <div class="card-body">
+
+                            <a th:href="@{/admin/product/add}" class="btn btn-primary me-2">
+                                Add Product
+                            </a>
+
+                            <a th:href="@{/admin/category/add}" class="btn btn-success me-2">
+                                Add Category
+                            </a>
+
+                            <a th:href="@{/admin/brand/add}" class="btn btn-warning">
+                                Add Brand
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div th:replace="fragments/adminfooter :: adminfooter"></div>
+
+    </div>
+
+</body>
+
+</html>

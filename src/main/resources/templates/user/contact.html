@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link th:href="@{/css/style.css}" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+	<div th:replace="~{fragments/header :: header}"></div>
+	<!-- Contact Hero Section -->
+	<section class="contact-hero">
+		<div class="overlay"></div>
+		<div class="hero-content">
+			<h1>Contact Us</h1>
+			<div class="breadcrumb">
+				<a th:href="@{/}">Home</a>
+				<span>></span>
+				<span>Contact</span>
+			</div>
+		</div>
+	</section>
+	<section class="contact-section">
+
+		<!-- Left Side -->
+		<div class="contact-info">
+			<h2><span>Get in</span> Touch</h2>
+			<div class="line"></div>
+			<p>
+				We would love to hear from you! Whether you have a question
+				about our products, need assistance, or just want to say hello,
+				feel free to reach out.
+			</p>
+			<div class="info-box">
+				<div class="icon">
+					<i class="fa-solid fa-phone"></i>
+				</div>
+				<div>
+					<h4>Call Us</h4>
+					<a href="">+91 9580674140</a>
+				</div>
+			</div>
+			<div class="info-box">
+				<div class="icon">
+					<i class="fa-solid fa-envelope"></i>
+				</div>
+				<div>
+					<h4>Email Us</h4>
+					<span>info@ganwaiswad.com</span>
+				</div>
+			</div>
+
+			<div class="info-box">
+				<div class="icon">
+					<i class="fa-solid fa-location-dot"></i>
+				</div>
+
+				<div>
+					<h4>Our Location</h4>
+					<span>Jaunpur, Uttar Pradesh, India</span>
+				</div>
+			</div>
+
+			<div class="info-box">
+				<div class="icon">
+					<i class="fa-regular fa-clock"></i>
+				</div>
+
+				<div>
+					<h4>Business Hours</h4>
+					<span>Mon - Sun : 8:00 AM - 8:00 PM</span>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Right Side -->
+		<div class="contact-form">
+
+			<h2><span>Send Us</span> a Message</h2>
+
+			<div class="line"></div>
+
+			<form>
+
+				<div class="form-row">
+
+					<input type="text" placeholder="Your Name">
+
+					<input type="email" placeholder="Your Email">
+
+				</div>
+
+				<div class="form-row">
+
+					<input type="text" placeholder="Your Phone Number">
+
+					<input type="text" placeholder="Subject">
+
+				</div>
+
+				<textarea placeholder="Your Message"></textarea>
+
+				<button type="submit">
+					<i class="fa-solid fa-paper-plane"></i>
+					Send Message
+				</button>
+
+			</form>
+
+		</div>
+
+	</section>
+
+	<div th:replace="~{fragments/footer :: footer}"></div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
